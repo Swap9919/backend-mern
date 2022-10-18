@@ -1,0 +1,22 @@
+{
+  "name": "day1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swap9919/backend-mern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swap9919/backend-mern/issues"
+  },
+  "homepage": "https://github.com/Swap9919/backend-mern#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
