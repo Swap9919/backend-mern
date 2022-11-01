@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<!-- Doctype defines the document type is HTML5 Document -->
+
+<html>
+<!--Direction attribute 
+	allows you to indicate to the browser about the direction in which the text should flow
+-->
+<html dir="ltr">
+<!-- left to right -->
+<html dir="rtl">
+<!-- right to left -->
+<!-- Language English -->
+<html lang="en">
+<!-- Encloses the complete HTML document -->
+
+<head>
+      <!-- Represents the document's header which can keep other HTML tags like <title>, <link> etc. -->
+      <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+      <title>
+            My Practice Session
+            <!-- Used inside the <head> tag to mention the
+            document title. -->
+      </title>
+
+      <!--	<meta> tag to specify important keywords related to the document 
+				And later these keywords are used by the search engines while indexing your webpage for searching purpose.
+			
+		  -->
+      <meta name="Html Tutorial" content="html,html basics, all html tags" />
+
+      <!-- Document Refreshing -->
+      <meta http-equiv="refresh" content="50000" />
+
+      <!-- Document refreshing and redirecting -->
+      <meta http-equiv="refresh" content="500000; url = http://www.google.com" />
+
+      <!-- <meta> tag to store cookies on client side and later this information can be used by the Web Server to track a site visitor. -->
+      <meta http-equiv="cookie" content="userid = xyz; expires = Wednesday, 08-Aug-22 23:59:59 GMT;" />
+
+      <!-- Author name -->
+      <meta name="author" content="SWAROOP" />
+
+      <!--  	Web servers and Web browsers use ISO-8859-1 (Latin1) encoding to process Web pages 
+				to specify character set used within the webpage.
+		-->
+      <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+</head>
+
+<body>
+      <!-- Represents the document's body which keeps other HTML tags -->
+
+      <!-- Tags used in html -->
+
+      <!-- Heading tags -->
+      <h1>abcdefghijklmnopqrstuvwxyz</h1>
+      <h2>abcdefghijklmnopqrstuvwxyz</h2>
+      <h3>abcdefghijklmnopqrstuvwxyz</h3>
+      <h4>abcdefghijklmnopqrstuvwxyz</h4>
+      <h5>abcdefghijklmnopqrstuvwxyz</h5>
+      <h6>abcdefghijklmnopqrstuvwxyz</h6>
+
+      <!-- Paragraph tag -->
+      <p>abcdefghijklmnopqrstuvwxyz</p>
+
+      <!-- Line Break Tag -->
+      <br />
+
+      <!-- Centre tag to put any content in the center of the page or any table cell. -->
+      <center>abcdefghijklmnopqrstuvwxyz</center>
+
+      <!-- Horizontal lines are used to visually break-up sections of a document. -->
+      <hr />
+
+      <!-- Any text between the opening <pre> tag and the closing </pre> tag will preserve the formatting -->
+      <pre>
+			function abc(){
+				var a=10,b=20;
+				var c=a+b;
+				console.log(c);
+			}
+			Output: 30
+		</pre>
+
+      <!-- Non breakig space 
+			Suppose you want to use the phrase "12 Angry Men." 
+			Here, you would not want a browser to split the "12, Angry" and "Men" across two lines
+			In cases, where you do not want the client browser to break text, 
+			you should use a nonbreaking space entity &nbsp; instead of a normal space.
+		-->
+      <p>
+            "12 angry Men"<br/>
+            "Swaroop Sai B.Tech."<br/>
+            "Swaroop&nbsp;Sai&nbsp;B.Tech."
+      </p>
+
+      <!-- Italic Font -->
+      <i> abcdefghijklmnopqrstuvwxyz </i>
+
+      <!-- Underlined text -->
+      <u> abcdefghijklmnopqrstuvwxyz </u>
+
+      <!-- bold text -->
+      <b> abcdefghijklmnopqrstuvwxyz </b>
+
+      <!-- Strike through text -->
+      <strike> abcdefghijklmnopqrstuvwxyz </strike>
+
+      <!-- Emphasized text -->
+      <p>Hi I am <em>SWAROOP</em> Sai</p>
+
+      <!-- Marked text -->
+      <p>Hi I am <mark>SWAROOP</mark> Sai</p>
+
+      <!-- Strong text -->
+      <p>Hi I am <strong>SWAROOP</strong>Sai</p>
+
+      <!-- Text Abbrevation -->
+      <p>Hi I am <abbr title="SWAROOP SAI"> KVS </abbr> B.Tech</p>
+
+      <!-- Acronym Element -->
+      <p>Hi I am SWAROOP <acronym>SAI</acronym></p>
+
+      <!-- Text Direction Bi Directional Override-->
+      <p>Hi I am <bdo dir="rtl">SWAROOP</bdo> Sai</p>
+
+      <!-- Short Quotations -->
+      <p>Hi I am <q>SWAROOP SAI</q></p>
+
+      <!-- Address Text -->
+      <address>
+            Mannur, Rajampet, Kadapa
+      </address>
+
+      <!-- 	Monospaced font
+			The content of a <tt>...</tt> element is written in monospaced font. 
+			Most of the fonts are known as variable-width fonts because different letters are of different widths 
+			(for example, the letter 'm' is wider than the letter 'i'). 
+			In a monospaced font, however, each letter has the same width.
+		-->
+      <p>
+            abcdefghijklmnopqrstuvwxyz
+            <tt>abcdefghijklmnopqrstuvwxyz</tt> abcdefghijklmnopqrstuvwxyz
+      </p>
+
+      <!-- Super script -->
+      <p>(a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+
+      <!-- Sub script -->
+      <p>a<sub>m</sub>b<sub>n</sub></p>
+      <div class="testInline">
+            <!-- Inserted text   and     Deleted text -->
+            <p>I want to drink <del>cola</del> <ins>wine</ins></p>
+
+            <!-- Larger text     and     Smaller text -->
+            <p>Hi! I am <big>SWAROOP</big> <small>Sai</small></p>
+
+            <!-- align attribute can be used in a tag -->
+            <!-- align="left" or "right" or "center" -->
+            <p align="center">abcdefghijklmnopqrstuvwxyz</p>
+      </div>
+      <!-- Core attributes -->
+      <!-- 
+			id		: can be used to uniquely identify any element within an HTML page
+			title	: title attribute gives a suggested title for the element.
+			class	: used to associate an element with a style sheet
+			style	: allows you to specify Cascading Style Sheet (CSS) rules within the element.
+		-->
+      <p id="sample">...</p>
+      <p title="sample">abcdefghijklmnopqrstuvwxyz</p>
+      <p class="sample">...</p>
+      <p style="color: red; font-family:arial;">
+            abcdefghijklmnopqrstuvwxyz
+      </p>
+
+      <!-- 	Grouping Content The <div> and <span> elements allow you to group together 
+			several elements to create sections or subsections of a page.
+		-->
+      <div>
+            <p>...</p>
+            <h1>...</h1>
+      </div>
+
+      <!-- The <span> element, on the other hand, can be used to group inline elements only -->
+      <p>Hi! I am <span style="color:red"> SWAROOP Sai </span> B.Tech</p>
+
+      <!-- Image Insert -->
+      <!-- script attributes width, height, border, align-->
+      <img src="./sample/png" alt="sample image" />
+
+      <!-- Tables -->
+      <!-- Tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells. -->
+      <!-- Cell padding and cell spacing attributes     border, cellpadding, cellspacing, rowspan,colspan, 
+			bordercolor, bgcolor, "background" to insert image , width, height
+		-->
+      <!-- thead tbody tfoot are the three main heading caan aslo be used -->
+      <table border="1" cellpadding="10" cellspacing="2" bordercolor="red" bgcolor="#cffed" width="500px"
+            height="200px">
+            <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Age</th>
+                  <th>Number</th>
+                  <th>Region</th>
+            </tr>
+            <tr>
+                  <td>SWAROOP</td>
+                  <td rowspan="2">KV</td>
+                  <td>28</td>
+                  <td>9448659483</td>
+                  <td>Rajampet</td>
+            </tr>
+            <tr>
+                  <td>SWAROOP</td>
+                  <td>24</td>
+                  <td>9448659483</td>
+                  <td>Rajampet</td>
+            </tr>
+            <tr>
+                  <td colspan="2">SWAROOP</td>
+                  <td>24</td>
+                  <td>9448659483</td>
+                  <td>Rajampet</td>
+            </tr>
+      </table>
+
+      <!-- Unordered list 		This will list items using plain bullets       attributes type: square disc circle  -->
+
+      <ul>
+            <li type="circle">SWAROOP</li>
+            <li type="disc">Sai</li>
+            <li type="square">K.SWAROOP</li>
+      </ul>
+
+      <!-- Ordered list 		Default is numbering	can also start from any number using start		attibute type: 1 A a i I-->
+      <ol type="I" start="4">
+            <li>SWAROOP</li>
+            <li>Sai</li>
+            <li>K.SWAROOP</li>
+      </ol>
+
+      <!-- Definition list 					Entries are listed like in a dictionary or encyclopedia -->
+      <dl>
+            <!-- Definition list -->
+            <dt>HTML</dt>
+            <!-- Definition title -->
+            <dd>Hyper Text Markup Language</dd>
+            <!-- Definition Data -->
+            <br />
+            <hr />
+            <br />
+            <dt>Theory of Relativity</dt>
+            <dd>
+                  In 1905, Albert Einstein determined that the laws of physics are
+                  the same for all non-accelerating observers, and that the speed of
+                  light in a vacuum was independent of the motion of all observers.
+                  This was the theory of special relativity. It introduced a new
+                  framework for all of physics and proposed new concepts of space
+                  and time. Einstein then spent 10 years trying to include
+                  acceleration in the theory and published his theory of general
+                  relativity in 1915. In it, he determined that massive objects
+                  cause a distortion in space-time, which is felt as gravity.
+            </dd>
+      </dl>
+
+      <!-- Linking documents 	Target attribute 
+			1	_blank	: Opens the linked document in a new window or tab.
+			2	_self	: Opens the linked document in the same frame.
+			3	_parent	: Opens the linked document in the parent frame.
+			4	_top	: Opens the linked document in the full body of the window. 
+		-->
+      <a href="https://www.google.com" target="_blank">Google Link</a><br />
+
+      <!-- Frames			HTML frames are used to divide your browser window into multiple sections
+			 where each section can load a separate HTML document
+			 written in place of body
+		-->
+      <!-- frameset attributes 		cols, rows, border, frameborder, framespacing -->
+      <frameset cols="25%,50%,25%">
+            <!-- frame tag attributes 	src, name, 	frameborder, marginwidth, marginheight, noresize, scrolling, longdesc -->
+            <frame name="index" src="./index.html" />
+      </frameset>
+
+      <noframes>
+
+            <body>Your browser doesnt support frames</body>
+      </noframes>
+
+      <!-- inline frame -->
+      <iframe src="https://youtube.com" width=500px height 300px>
+
+      </iframe>
+
+      <!-- Font tag -->
+      <br />
+      <font size=3 color="red">Hello SWAROOP</font>
+
+      <!-- Forms 		attributes: action, method, target, enctype:application/x-www-form-urlencoded or mutlipart/form-data-->
+      <form>
+            <!-- attributes of input type, name, val, size, maxlength -->
+            First Name<input type="text" name="firstName" placeholder="Enter First Name" />
+            <!-- Text Area -->
+            <br /><textarea rows="10" cols="40" placeholder="Enter your text here..." maxlength="250"></textarea>
+            <!-- input type checkbox 	attributes: type name value checked -->
+            <input type="checkbox" name="Male" value="on" checked="checked">Male
+            <input type="checkbox" name="Female" value="off">Female <br />
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+      </form>
+
+      <!-- Embedd Multimedia -->
+      <embed src="https://www.youtube.com/watch?v=_Z1D67D0oQE" width="100%" height="300px">
+      <noembed><img src="sample.png" alt="video song" /></noembed>
+      </embed>
+</body>
+
+</html><!DOCTYPE html>
+
+<!-- Doctype defines the document type and HTML version. -->
+
+<html>
+<!--Direction attribute 
+	allows you to indicate to the browser about the direction in which the text should flow
+-->
+<html dir="ltr">
+<!-- left to right -->
+<html dir="rtl">
+<!-- right to left -->
+<!-- Language English -->
+<html lang="en">
+<!-- Encloses the complete HTML document -->
+
+<head>
+      <!-- Represents the document's header which can keep other HTML tags like <title>, <link> etc. -->
+      <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+      <title>
+            My Practice Session
+            <!-- Used inside the <head> tag to mention the
+            document title. -->
+      </title>
+
+      <!--	<meta> tag to specify important keywords related to the document 
+				And later these keywords are used by the search engines while indexing your webpage for searching purpose.
+			
+		  -->
+      <meta name="Html Tutorial" content="html,html basics, all html tags" />
+
+      <!-- Document Refreshing -->
+      <meta http-equiv="refresh" content="50000" />
+
+      <!-- Document refreshing and redirecting -->
+      <meta http-equiv="refresh" content="500000; url = http://www.google.com" />
+
+      <!-- <meta> tag to store cookies on client side and later this information can be used by the Web Server to track a site visitor. -->
+      <meta http-equiv="cookie" content="userid = xyz; expires = Wednesday, 08-Aug-19 23:59:59 GMT;" />
+
+      <!-- Author name -->
+      <meta name="author" content="SWAROOP" />
+
+      <!--  	Web servers and Web browsers use ISO-8859-1 (Latin1) encoding to process Web pages 
+				to specify character set used within the webpage.
+		-->
+      <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+</head>
+
+<body>
+      <!-- Represents the document's body which keeps other HTML tags -->
+
+      <!-- Tags used in html -->
+
+      <!-- Heading tags -->
+      <h1>abcdefghijklmnopqrstuvwxyz</h1>
+      <h2>abcdefghijklmnopqrstuvwxyz</h2>
+      <h3>abcdefghijklmnopqrstuvwxyz</h3>
+      <h4>abcdefghijklmnopqrstuvwxyz</h4>
+      <h5>abcdefghijklmnopqrstuvwxyz</h5>
+      <h6>abcdefghijklmnopqrstuvwxyz</h6>
+
+      <!-- Paragraph tag -->
+      <p>abcdefghijklmnopqrstuvwxyz</p>
+
+      <!-- Line Break Tag -->
+      <br />
+
+      <!-- Centre tag to put any content in the center of the page or any table cell. -->
+      <center>abcdefghijklmnopqrstuvwxyz</center>
+
+      <!-- Horizontal lines are used to visually break-up sections of a document. -->
+      <hr />
+
+      <!-- Any text between the opening <pre> tag and the closing </pre> tag will preserve the formatting -->
+      <pre>
+			function abc(){
+				var a=10,b=20;
+				var c=a+b;
+				console.log(c);
+			}
+			Output: 30
+		</pre>
+
+      <!-- Non breakig space 
+			Suppose you want to use the phrase "12 Angry Men." 
+			Here, you would not want a browser to split the "12, Angry" and "Men" across two lines
+			In cases, where you do not want the client browser to break text, 
+			you should use a nonbreaking space entity &nbsp; instead of a normal space.
+		-->
+      <p>
+            An example of this technique appears in the movie
+            "SWAROOP&nbsp;IPS&nbsp;B.Tech."
+      </p>
+
+      <!-- Italic Font -->
+      <i> abcdefghijklmnopqrstuvwxyz </i>
+
+      <!-- Underlined text -->
+      <u> abcdefghijklmnopqrstuvwxyz </u>
+
+      <!-- bold text -->
+      <b> abcdefghijklmnopqrstuvwxyz </b>
+
+      <!-- Strike through text -->
+      <strike> abcdefghijklmnopqrstuvwxyz </strike>
+
+      <!-- Emphasized text -->
+      <p>Hi I am <em>SWAROOP</em> Sai</p>
+
+      <!-- Marked text -->
+      <p>Hi I am <mark>SWAROOP</mark> Sai</p>
+
+      <!-- Strong text -->
+      <p>Hi I am <strong>SWAROOP</strong>Sai</p>
+
+      <!-- Text Abbrevation -->
+      <p>Hi I am <abbr title="SWAROOP Sai"> Sai </abbr> B.Tech</p>
+
+      <!-- Acronym Element -->
+      <p>Hi I am SWAROOP <acronym>IPS</acronym></p>
+
+      <!-- Text Direction Bi Directional Override-->
+      <p>Hi I am <bdo dir="rtl">SWAROOP</bdo> Sai</p>
+
+      <!-- Short Quotations -->
+      <p>Hi I am <q>SWAROOP IPS</q></p>
+
+      <!-- Address Text -->
+      <address>
+            Balijapalli, Rajampet, Kadapa
+      </address>
+
+      <!-- 	Monospaced font
+			The content of a <tt>...</tt> element is written in monospaced font. 
+			Most of the fonts are known as variable-width fonts because different letters are of different widths 
+			(for example, the letter 'm' is wider than the letter 'i'). 
+			In a monospaced font, however, each letter has the same width.
+		-->
+      <p>
+            abcdefghijklmnopqrstuvwxyz
+            <tt>abcdefghijklmnopqrstuvwxyz</tt> abcdefghijklmnopqrstuvwxyz
+      </p>
+
+      <!-- Super script -->
+      <p>(a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+
+      <!-- Sub script -->
+      <p>a<sub>m</sub>b<sub>n</sub></p>
+      <div class="testInline">
+            <!-- Inserted text   and     Deleted text -->
+            <p>I want to drink <del>cola</del> <ins>wine</ins></p>
+
+            <!-- Larger text     and     Smaller text -->
+            <p>Hi! I am <big>SWAROOP</big> <small>Sai</small></p>
+
+            <!-- align attribute can be used in a tag -->
+            <!-- align="left" or "right" or "center" -->
+            <p align="center">abcdefghijklmnopqrstuvwxyz</p>
+      </div>
+      <!-- Core attributes -->
+      <!-- 
+			id		: can be used to uniquely identify any element within an HTML page
+			title	: title attribute gives a suggested title for the element.
+			class	: used to associate an element with a style sheet
+			style	: allows you to specify Cascading Style Sheet (CSS) rules within the element.
+		-->
+      <p id="sample">...</p>
+      <p title="sample">abcdefghijklmnopqrstuvwxyz</p>
+      <p class="sample">...</p>
+      <p style="color: red; font-family:arial;">
+            abcdefghijklmnopqrstuvwxyz
+      </p>
+
+      <!-- 	Grouping Content The <div> and <span> elements allow you to group together 
+			several elements to create sections or subsections of a page.
+		-->
+      <div>
+            <p>...</p>
+            <h1>...</h1>
+      </div>
+
+      <!-- The <span> element, on the other hand, can be used to group inline elements only -->
+      <p>Hi! I am <span style="color:red"> SWAROOP Sai </span> B.Tech</p>
+
+      <!-- Image Insert -->
+      <!-- script attributes width, height, border, align-->
+      <img src="./sample/png" alt="sample image" />
+
+      <!-- Tables -->
+      <!-- Tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells. -->
+      <!-- Cell padding and cell spacing attributes     border, cellpadding, cellspacing, rowspan,colspan, 
+			bordercolor, bgcolor, "background" to insert image , width, height
+		-->
+      <!-- thead tbody tfoot are the three main heading caan aslo be used -->
+      <table border="1" cellpadding="10" cellspacing="2" bordercolor="red" bgcolor="#cffed" width="500px"
+            height="200px">
+            <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Age</th>
+                  <th>Number</th>
+                  <th>Region</th>
+            </tr>
+            <tr>
+                  <td>SWAROOP</td>
+                  <td rowspan="2">KV</td>
+                  <td>24</td>
+                  <td>9448659483</td>
+                  <td>Rajampet</td>
+            </tr>
+            <tr>
+                  <td>SWAROOP</td>
+                  <td>24</td>
+                  <td>9448659483</td>
+                  <td>Rajampet</td>
+            </tr>
+            <tr>
+                  <td colspan="2">SWAROOP</td>
+                  <td>24</td>
+                  <td>9448659483</td>
+                  <td>Rajampet</td>
+            </tr>
+      </table>
+
+      <!-- Unordered list 		This will list items using plain bullets       attributes type: square disc circle  -->
+
+      <ul>
+            <li type="circle">SWAROOP</li>
+            <li type="disc">Sai</li>
+            <li type="square">D.SWAROOP</li>
+      </ul>
+
+      <!-- Ordered list 		Default is numbering	can also start from any number using start		attibute type: 1 A a i I-->
+      <ol type="I" start="4">
+            <li>SWAROOP</li>
+            <li>Sai</li>
+            <li>D.SWAROOP</li>
+      </ol>
+
+      <!-- Definition list 					Entries are listed like in a dictionary or encyclopedia -->
+      <dl>
+            <!-- Definition list -->
+            <dt>HTML</dt>
+            <!-- Definition title -->
+            <dd>Hyper Text Markup Language</dd>
+            <!-- Definition Data -->
+            <br />
+            <hr />
+            <br />
+            <dt>Theory of Relativity</dt>
+            <dd>
+                  In 1905, Albert Einstein determined that the laws of physics are
+                  the same for all non-accelerating observers, and that the speed of
+                  light in a vacuum was independent of the motion of all observers.
+                  This was the theory of special relativity. It introduced a new
+                  framework for all of physics and proposed new concepts of space
+                  and time. Einstein then spent 10 years trying to include
+                  acceleration in the theory and published his theory of general
+                  relativity in 1915. In it, he determined that massive objects
+                  cause a distortion in space-time, which is felt as gravity.
+            </dd>
+      </dl>
+
+      <!-- Linking documents 	Target attribute 
+			1	_blank	: Opens the linked document in a new window or tab.
+			2	_self	: Opens the linked document in the same frame.
+			3	_parent	: Opens the linked document in the parent frame.
+			4	_top	: Opens the linked document in the full body of the window. 
+		-->
+      <a href="https://www.google.com" target="_blank">Google Link</a><br />
+
+      <!-- Frames			HTML frames are used to divide your browser window into multiple sections
+			 where each section can load a separate HTML document
+			 written in place of body
+		-->
+      <!-- frameset attributes 		cols, rows, border, frameborder, framespacing -->
+      <frameset cols="25%,50%,25%">
+            <!-- frame tag attributes 	src, name, 	frameborder, marginwidth, marginheight, noresize, scrolling, longdesc -->
+            <frame name="index" src="./index.html" />
+      </frameset>
+
+      <noframes>
+
+            <body>Your browser doesnt support frames</body>
+      </noframes>
+
+      <!-- inline frame -->
+      <iframe src="https://youtube.com" width=500px height 300px>
+
+      </iframe>
+
+      <!-- Font tag -->
+      <br />
+      <font size=3 color="red">Hello SWAROOP</font>
+
+      <!-- Forms 		attributes: action, method, target, enctype:application/x-www-form-urlencoded or mutlipart/form-data-->
+      <form>
+            <!-- attributes of input type, name, val, size, maxlength -->
+            First Name<input type="text" name="firstName" placeholder="Enter First Name" />
+            <!-- Text Area -->
+            <br /><textarea rows="10" cols="40" placeholder="Enter your text here..." maxlength="250"></textarea>
+            <!-- input type checkbox 	attributes: type name value checked -->
+            <input type="checkbox" name="Male" value="on" checked="checked">Male
+            <input type="checkbox" name="Female" value="off">Female <br />
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+      </form>
+
+      <!-- Embedd Multimedia -->
+      <embed src="https://www.youtube.com/watch?v=_Z1D67D0oQE" width="100%" height="300px">
+      <noembed><img src="sample.png" alt="video song" /></noembed>
+      </embed>
+</body>
+
+</html>
+<!-- 
+</html>
+
+</html>
+
+</html> -->
