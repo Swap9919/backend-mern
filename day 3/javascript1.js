@@ -9,7 +9,7 @@
 //javascript is a loosely typed language  
 // scope, scope chain, and lexical environment 
 //scope is where we can access a specific function or a varibale in our code
-// scope chain is  the chain of all the lexcical envirnoment of the paren refernces
+// scope chain is  the chain of all the  lexcical envirnoment of the parent refernces
 // where ever an execution context is created a lexcial environment is also created.
 // lexcial enviorment is the local memory along with the lexical environment of its parent
 // lexical means a heirarchie or in a sequence
