@@ -22,5 +22,6 @@ console.log(a);
 // strings, numbers, objects, undefined, boolean
 //ternary operator takes 3 operands a statement followed by a question mark then an expression if the condition is truthy followed by solon 
 // and finally the expression to execute if the condition is falsy
+//
 
 
