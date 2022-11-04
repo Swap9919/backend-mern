@@ -26,7 +26,7 @@ function abc(){
 abc()
 console.log(a);
 
-// hoisting is a javascript defalut behaviour of moving declarations to top of thr cuurent scope
+// hoisting is a javascript default behaviour of moving declarations to top of thr current scope
 function abc(){
       console.log(a);
       var a=2;

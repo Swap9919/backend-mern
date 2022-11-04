@@ -8,8 +8,8 @@
 // undefined takes up some memory and it is not empty it is like a place holder
 //javascript is a loosely typed language  
 // scope, scope chain, and lexical environment 
-//scope is where we can access a specific function or a varibale in our code
-// scope chain is  the chain of all the  lexcical envirnoment of the parent refernces
-// where ever an execution context is created a lexcial environment is also created.
-// lexcial enviorment is the local memory along with the lexical environment of its parent
-// lexical means a heirarchie or in a sequence
+//scope is where we can access a specific function or a variable in our code
+// scope chain is  the chain of all the  lexical environment of the parent references
+// where ever an execution context is created a lexical environment is also created.
+// lexical environment is the local memory along with the lexical environment of its parent
+// lexical means a hierarchy or in a sequence
